@@ -1,0 +1,54 @@
+.MyProgress {
+  /* background-color: #ffffff;
+  border-radius: 20px; */
+  position: relative;
+  margin: 15px 0;
+  height: 2rem;
+  width: auto;
+}
+
+.progress-done {
+  /* background: linear-gradient(
+    to left,
+    rgba(54, 162, 235, 1),
+    rgba(54, 162, 235, 0.2)
+  );
+  box-shadow: 0 3px 3px -5px rgba(54, 162, 235, 0.8),
+    0 2px 5px rgba(54, 162, 235, 0.5);
+  border-radius: 20px;
+  color: rgb(0, 0, 0); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+.progress-done p {
+  position: absolute;
+  left: 5rem;
+  top: 0.2rem;
+}
+
+
+.progress-icon {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  left: 10px;
+  top: 6rem;
+  z-index: 10;
+}
+@media (min-width: 50rem) {
+ 
+  .progress-icon {
+    position: fixed;
+    top: 4rem;
+    left: 15px;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+  }
+}
